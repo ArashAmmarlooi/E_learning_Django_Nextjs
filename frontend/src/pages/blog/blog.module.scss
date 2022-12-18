@@ -1,0 +1,147 @@
+@import "../../styles/vendors/variables.scss";
+
+.mainContainer {
+  display: flex;
+  direction: rtl;
+  padding-right: 30px;
+  .blogsContainer {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 2;
+    min-height: 400px;
+    direction: rtl;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    .blogContent {
+      display: flex;
+      position: relative;
+      width: 90%;
+      height: 550px;
+      padding-right: 20px;
+      padding-top: 20px;
+      margin-top: 30px;
+      margin-right: 20px;
+      flex-direction: column;
+      border-radius: 10px;
+      border: 1px solid $borderColor;
+      .blogBtn {
+        display: flex;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(106, 54, 248);
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        font-size: 13px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      p {
+        width: 80%;
+      }
+      .imageContainer {
+        position: relative;
+        width: 80%;
+        border-radius: 10px;
+        // height: 300px;
+        img {
+          object-fit: cover;
+          width: 100%;
+          border-radius: 5px;
+          height: 300px;
+        }
+      }
+
+      .blogSpesc {
+        display: flex;
+        gap: 30px;
+        width: 90%;
+        height: 30px;
+        p {
+          height: 800px;
+          background-color: blue;
+        }
+      }
+    }
+  }
+
+  .courseSpecContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+    .courseContainer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      min-height: 300px;
+      border: 1px solid $borderColor;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding-bottom: 30px;
+      .courseContainerTitle {
+        font-size: 18px;
+        padding-top: 15px;
+        margin-right: 20px;
+        width: 80%;
+        height: 50px;
+        border-bottom: 1px solid $borderColor;
+      }
+    }
+    .courseContent {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 15px;
+      width: 80%;
+      height: 60px;
+      border: 1px solid $borderColor;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.17);
+        -webkit-box-shadow: -1px 1px 7px 1px rgba(0, 0, 0, 0.13);
+        -moz-box-shadow: -1px 1px 7px 2px rgba(0, 0, 0, 0.13);
+      }
+      span {
+        // margin-top: 10px;
+        display: flex;
+        gap: 8px;
+        margin-right: 10px;
+        flex-direction: column;
+
+        div {
+          display: flex;
+          gap: 13px;
+        }
+      }
+      .courseImgCont {
+        width: 70px;
+        height: 45px;
+        margin-right: 5px;
+        background-color: aqua;
+        position: relative;
+        border-radius: 5px;
+
+        img {
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

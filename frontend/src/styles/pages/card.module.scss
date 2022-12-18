@@ -1,0 +1,44 @@
+.cardCont {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  direction: rtl;
+  align-items: center;
+  div {
+    flex: 2;
+  }
+  table {
+    direction: rtl;
+    width: 100%;
+    border: 1px solid black;
+    thead {
+      border-bottom: 1px solid black;
+      tr {
+        border: 1px solid gray;
+        th {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+
+  .priceCont {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    .priceCard {
+      width: 20%;
+      height: 200px;
+      border: 1px solid black;
+      .checkBtn{
+        width: 230px;
+        border-radius: 10px;
+        height: 50px;
+        background-color: rgb(52, 73, 255);
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.navMenu {
+  // position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    flex: 1;
+    display: flex;
+    list-style-type: none;
+    direction: rtl;
+    li {
+      margin-right: 10%;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    .btnSpan {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 286px;
+      height: 100%;
+      // justify-content:center;
+      // align-items:center;
+      .imgLogSpan {
+        position: absolute;
+        right: 51px;
+        top: 27px;
+        transform: rotate(180deg);
+      }
+      .imgBascketSpan {
+        position: absolute;
+        left: 67px;
+        top: 29px;
+        img {
+          // stroke: #491ec4;
+        }
+      }
+      .logBtn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 35px;
+        left: 120px;
+        border-radius: 10px;
+        border-top: 1.5px solid rgb(119, 119, 119);
+        border-left: 1.5px solid rgb(119, 119, 119);
+        border-bottom: 1.5px solid rgb(119, 119, 119);
+        font-size: 12px;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        &:hover {
+          background-color: #6c63ff;
+          color: white;
+        }
+      }
+    }
+  }
+}
